@@ -1,243 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pharma Diaries by Iri</title>
+  <title>Pharm Diaries by Iri</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --primary-color:#987070 ;
-      --accent-color: #C39898 ;
-      --background-color: #F1E5D1;
-      --text-color: #333;
-      --font-family: 'Dancing Script', cursive;
-    }
-
     body {
-      margin: 0;
-      background: var(--background-color);
-      font-family: var(--font-family);
-      color: var(--text-color);
-      line-height: 1.6;
-    }
-
-    header {
-      background: var(--primary-color);
-      color: cream;
-      padding: 1rem 1.5rem;
+      font-family: 'Dancing Script', cursive;
       text-align: center;
+      background-color: #f5f5f5;
+      padding: 40px;
     }
-
-    header h1 {
-      margin: 0;
-      font-weight: 700;
-      font-size: 1.8rem;
-      letter-spacing: 1.5px;
+    img {
+      width: 200px;
+      border-radius: 50%;
+      margin-top: 20px;
     }
-
-    nav {
-      margin-top: 0.5rem;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 0.8rem;
-      font-weight: 600;
-      transition: color 0.3s ease;
-    }
-
-    nav a:hover {
-      color: var(--accent-color);
-    }
-
-    main {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-
-    section {
-      margin-bottom: 3rem;
-    }
-
-    h2 {
-      color: var(--primary-color);
-      border-bottom: 3px solid var(--accent-color);
-      padding-bottom: 0.3rem;
-      margin-bottom: 1rem;
-      font-weight: 700;
-    }
-
-    /* About Me */
-    .about p {
-      font-size: 1.1rem;
-      max-width: 600px;
-    }
-
-    /* Blog / Pharmacy Journey */
-    .blog-post {
+    .container {
       background: white;
-      padding: 1rem 1.2rem;
-      margin-bottom: 1.5rem;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    }
-
-    .blog-post h3 {
-      margin-top: 0;
-      color: var(--accent-color);
-    }
-
-    .blog-post time {
-      font-size: 0.85rem;
-      color: #666;
-    }
-
-    /* Social Links */
-    .social-links a {
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
       display: inline-block;
-      margin-right: 1rem;
-      text-decoration: none;
-      color: var(--primary-color);
-      font-weight: 600;
-      border: 2px solid var(--primary-color);
-      padding: 0.3rem 0.8rem;
-      border-radius: 6px;
-      transition: background-color 0.3s ease, color 0.3s ease;
-    }
-
-    .social-links a:hover {
-      background-color: var(--accent-color);
-      color: white;
-      border-color: var(--accent-color);
-    }
-
-    /* Contact */
-    form {
-      max-width: 600px;
-      display: flex;
-      flex-direction: column;
-    }
-
-    label {
-      margin-bottom: 0.3rem;
-      font-weight: 600;
-    }
-
-    input, textarea {
-      margin-bottom: 1rem;
-      padding: 0.6rem 0.8rem;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-      font-family: var(--font-family);
-      font-size: 1rem;
-      resize: vertical;
-    }
-
-    button {
-      background-color: var(--accent-color);
-      color: white;
-      padding: 0.7rem 1.2rem;
-      border: none;
-      border-radius: 6px;
-      font-size: 1.1rem;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-      font-weight: 700;
-    }
-
-    button:hover {
-      background-color: #1e8449;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1.5rem 1rem;
-      background: var(--primary-color);
-      color: white;
-      margin-top: 3rem;
-      font-size: 0.9rem;
-    }
-
-    @media (max-width: 600px) {
-      nav a {
-        margin: 0 0.5rem;
-      }
-
-      main {
-        padding: 0 1rem;
-      }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Pharma Diaries by Iri</h1>
-    <nav>
-      <a href="#about">About Me</a>
-      <a href="#journey">My Pharmacy Journey</a>
-      <a href="#social">Connect</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <main>
-    <section id="about" class="about">
-      <h2>About Me</h2>
-      <p>
-        Hi! I’m <strong>Irina</strong>, a passionate pharmacy student sharing my journey through.  
-        Follow along as I document  reflections on becoming a licensed pharmacist or clinical pharmacist.
-      </p>
-    </section>
-
-    <section id="journey" class="journey">
-      <h2>My Pharmacy Journey</h2>
-
-      <article class="blog-post">
-        <h3>Doing My Licensure Exam Preparation</h3>
-        <time datetime="2025-05-30">May 30, 2025</time>
-        <p>
-          Today I mapped out my study plan for the Pharmacy Assistant licensure exam.  
-          I’m focusing on balancing all subjects and making consistent progress every day.  
-          Excited to share updates here!
-        </p>
-      </article>
-
-      <article class="blog-post">
-        <h3>Why Staying Consistent Matters</h3>
-        <time datetime="2025-05-25">May 25, 2025</time>
-        <p>
-          Even small daily efforts build up over time. Discipline and routine are the real keys to success in pharmacy studies.
-        </p>
-      </article>
-    </section>
-
-    <section id="social" class="social">
-      <h2>Connect with Me</h2>
-      <div class="social-links">
-        <a href="https://www.tiktok.com/@ceediaries_" target="_blank" rel="noopener noreferrer">TikTok</a>
-        <a href="https://instagram.com/yourhandle" target="_blank" rel="noopener noreferrer">Instagram</a>
-        <a href="https://youtube.com/@yourhandle" target="_blank" rel="noopener noreferrer">YouTube</a>
-      </div>
-    </section>
-
-    <section id="contact" class="contact">
-      <h2>Contact Me</h2>
-      <form onsubmit="alert('Thank you for reaching out! I will get back to you soon.'); return false;">
-        <label for="name">Name</label>
-        <input id="name" name="name" type="text" placeholder="Your name" required />
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" placeholder="Your email" required />
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="4" placeholder="Your message..." required></textarea>
-        <button type="submit">Send</button>
-      </form>
-    </section>
-  </main>
-
-  <footer>
-    &copy; 2025 Pharma Diaries by Iri | Made with 💚
-  </footer>
+  <div class="container">
+    <h1>Welcome to Pharm Diaries by Iri 🌿</h1>
+    <img src="me.jpg" alt="My Photo">
+    <p>Hi! I'm Irina, a pharmacy student passionate about science, skincare, and study motivation.</p>
+  </div>
 </body>
 </html>
